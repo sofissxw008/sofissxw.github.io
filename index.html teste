@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Nosso Espaço</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to bottom, #ffeef5, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    max-width: 600px;
+}
+
+h1 {
+    font-weight: normal;
+    color: #d46a92;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Eu demorei para escrever isso…</h1>
+    <p>
+        Algumas coisas o tempo não apaga.
+        Só ensina a sentir com mais verdade.
+    </p>
+</div>
+
+</body>
+</html>
