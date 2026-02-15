@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    background-color: #f8f6f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* TIPOGRAFIA BASE (pensada para celular) */
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* CONTAINER */
+.container {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08),
+    0 25px 60px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    position: relative;
+    padding: 40px 25px 25px 25px;
+}
+    
+
+/* LOGIN */
+
+.login h1 {
+    color: #5c273b;
+    font-weight: normal;
+}
+
+.dica {
+    font-size: 16px;
+    color: #888;
+}
+
+.subdica {
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* INPUT */
+
+input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 18px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* BOTÃO */
+
+button {
+    margin-top: 12px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    background-color: #7a3e4d;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* BLOCOS */
+
+.bloco {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.bloco.ativo {
+    display: block;
+    opacity: 1;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 600px;
+        padding: 60px 60px 35px 60px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .dica {
+        font-size: 18px;
+    }
+
+    .subdica {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 14px 35px;
+    }
+}
+
