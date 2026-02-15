@@ -1,3 +1,4 @@
+
 let indiceAtual = 0;
 
 function verificarSenha() {
@@ -18,3 +19,4 @@ function proximo() {
     indiceAtual++;
     blocos[indiceAtual].classList.add("ativo");
 }
+
