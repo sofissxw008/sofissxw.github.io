@@ -1,51 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Nosso Espaço</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: 'Georgia', serif;
-    background: linear-gradient(to bottom, #ffeef5, #ffffff);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-}
-
-.container {
-    background: white;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
-    max-width: 600px;
-}
-
-h1 {
-    font-weight: normal;
-    color: #d46a92;
-}
-
-p {
-    font-size: 18px;
-    color: #555;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <title>Nosso Espaço</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>Eu demorei para escrever isso…</h1>
-    <p>
-        Algumas coisas o tempo não apaga.
-        Só ensina a sentir com mais verdade.
-    </p>
+
+    <!-- TELA DE SENHA -->
+    <div id="login" class="login">
+        <h1>Esse espaço é só nosso</h1>
+   <p class="dica">
+    A senha é o nosso dia
+    <br>
+    <span class="subdica">(4 números)</span>
+</p>
+        <input type="password" id="senha" placeholder="Digite a senha">
+        <button onclick="verificarSenha()">Entrar</button>
+    </div>
+
+    <!-- CONTEÚDO DO SITE -->
+    <div id="conteudo" style="display:none;">
+
+        <div class="bloco ativo">
+            <h1>Antes de qualquer coisa…</h1>
+            <p>
+                Eu não estou fazendo isso para precionar você, e sim pois 
+                guardar estava pesando mais do que falar.
+            </p>
+            <button onclick="proximo()">Continuar</button>
+        </div>
+
+        <div class="bloco">
+            <p>
+                Eu ainda lembro daquele dia específico…
+                Lembro do nervosismo, da alegria e paz ao ouvir o seu sim.
+            </p>
+            <button onclick="proximo()">Continuar</button>
+        </div>
+
+        <div class="bloco">
+            <p>
+                Lembro do jeito que você sorria sem perceber.
+                E como, naquele momento,
+                tudo parecia exatamente onde deveria estar.
+            </p>
+            <button onclick="proximo()">Continuar</button>
+        </div>
+
+        <div class="bloco">
+            <p>
+                Eu sei que falhei em algumas coisas.
+                E talvez eu tenha entendido tarde demais.
+                Mas eu entendi.
+            </p>
+            <button onclick="proximo()">Continuar</button>
+        </div>
+
+        <div class="bloco">
+            <p>
+                Se ainda existir um espaço no seu coração,
+                eu gostaria de tentar novamente.
+                Mas acima de tudo,
+                eu respeito o que você decidir.
+            </p>
+        </div>
+
+    </div>
+
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
+
+
 
