@@ -20,3 +20,4 @@ function proximo() {
     blocos[indiceAtual].classList.add("ativo");
 }
 
+
