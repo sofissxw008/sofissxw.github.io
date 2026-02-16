@@ -132,7 +132,6 @@ button:hover {
 /* PERMITE SCROLL APENAS NO BLOCO 3 */
 
 .bloco .pagina3 {
-    height: 100vh;
     overflow-y: auto;
     display: block;
 }
